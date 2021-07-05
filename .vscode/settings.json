@@ -1,0 +1,8 @@
+{  "editor.formatOnSave": true,
+    "prettier.singleQuote": true,
+    "prettier.semi": true,
+    "prettier.printWidth": 100,
+    "prettier.trailingComma": "all",
+    "prettier.tabWidth": 2,
+    "git.ignoreLimitWarning": true
+}

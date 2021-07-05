@@ -1,0 +1,51 @@
+{
+  "name": "npm-react-ts-starter",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "watch": "rollup -cw"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gh286991/npm-react-ts-starter.git"
+  },
+  "keywords": [
+    "npm",
+    "react",
+    "typescript",
+    "starter"
+  ],
+  "author": "Tom Jhuang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gh286991/npm-react-ts-starter/issues"
+  },
+  "homepage": "https://github.com/gh286991/npm-react-ts-starter#readme",
+  "dependencies": {
+    "@types/react": "^17.0.13",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "9.0.0",
+    "postcss": "^8.3.5",
+    "rollup": "^2.52.7",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-postcss-modules": "^2.0.2",
+    "rollup-plugin-typescript2": "^0.30.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
