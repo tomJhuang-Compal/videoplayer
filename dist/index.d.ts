@@ -1,6 +1,6 @@
 import React from 'react';
 declare type CounterProps = {
-    value: number;
+    src: string;
 };
-export declare const Counter: React.FC<CounterProps>;
-export {};
+declare const Counter: React.FC<CounterProps>;
+export default Counter;

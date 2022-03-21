@@ -1,5 +1,6 @@
 {
-  "name": "npm-react-ts-starter",
+  "private": false,
+  "name": "video-player-test",
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
@@ -31,11 +32,18 @@
   "homepage": "https://github.com/gh286991/npm-react-ts-starter#readme",
   "dependencies": {
     "@types/react": "^17.0.13",
+    "hls.js": "^1.1.5",
+    "konva": "^8.3.4",
+    "moment": "^2.29.1",
+    "ramda": "^0.28.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "typescript": "^4.3.5"
+    "react-konva": "^17.0.2-5",
+    "typescript": "^4.3.5",
+    "use-image": "^1.0.10"
   },
   "devDependencies": {
+    "@types/ramda": "^0.28.1",
     "autoprefixer": "9.0.0",
     "postcss": "^8.3.5",
     "rollup": "^2.52.7",
