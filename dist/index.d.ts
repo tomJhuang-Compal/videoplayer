@@ -1,6 +1,7 @@
 import React from 'react';
-declare type CounterProps = {
+declare type VideoProps = {
     src: string;
+    config: any;
 };
-declare const Counter: React.FC<CounterProps>;
+declare const Counter: React.FC<VideoProps>;
 export default Counter;
