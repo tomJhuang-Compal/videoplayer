@@ -12,7 +12,7 @@
     "@types/react-dom": "^17.0.0",
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
-    "npm-react-ts-starter": "link:..",
+    "video-player-test": "link:..",
     "react-scripts": "4.0.3",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"

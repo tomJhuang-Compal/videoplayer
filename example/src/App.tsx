@@ -1,5 +1,4 @@
-import React from 'react';
-import Counter from 'npm-react-ts-starter';
+import Counter from 'video-player-test';
 import './App.css';
 
 function App() {
