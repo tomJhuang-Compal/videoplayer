@@ -329,8 +329,10 @@ var Video = function (props) {
         var element = document.createElement('video');
         element.src = src;
         element.setAttribute('playsinline', '');
-        element.setAttribute('autoplay', '');
-        element.setAttribute('loop', '');
+        element.setAttribute('controls', true);
+        element.setAttribute('autoplay', 'autoplay');
+        element.setAttribute('muted', true);
+        element.setAttribute('loop', true);
         return element;
     }, [src]);
     // Video put in konva

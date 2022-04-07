@@ -1,7 +1,7 @@
 {
   "private": false,
-  "name": "video-player-test",
-  "version": "0.0.1",
+  "name": "@compal-swhq/video-player-test",
+  "version": "0.0.2",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -57,5 +57,8 @@
   "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
+  },
+  "publishConfig": {
+    "registry": "https://github.com/tomJhuang-Compal/videoplayer/:_authToken=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"
   }
 }
