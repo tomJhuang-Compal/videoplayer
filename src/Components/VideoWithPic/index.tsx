@@ -12,12 +12,18 @@ import useImage from 'use-image';
 import Commercial from '../Commercial';
 import QAComponent from '../Q&A';
 
-const Video = (props: any) => {
+const BriefingImg = ({ data, width, height }) => {
+  const [image] = useImage(R.pathOr('', ['src'], data));
+  return <Image width={width} height={height} image={image} />;
+};
+
+const VideoWithPic = (props: any) => {
   const { src, config } = props;
   const imageRef = useRef(null);
   const questionRef = useRef(null);
   const CMConfig = R.pathOr([], ['CM'], config);
   const QAConfig = R.pathOr([], ['Q&A'], config);
+  const briefingConfig = R.pathOr([], ['briefing'], config);
   const test = useWindowDimensions();
   const [processValue, setProcessValue] = useState(0);
   const [isShowControlPanel, setShowControlPanel] = useState(false);
@@ -31,6 +37,21 @@ const Video = (props: any) => {
   const playButton = useRef(null);
   const playCircle = useRef(null);
   const container = useRef(null);
+  const [briefImgIndex, setBriefImgIndex] = useState(0);
+
+  useEffect(() => {
+    checkBriefingTime();
+  });
+
+  const checkBriefingTime = () => {
+    const nextStartTime = R.pathOr('', [briefImgIndex + 1, 'startTime'], briefingConfig);
+    if (
+      Math.round(processValue * duration * 0.01) - 1 ===
+      moment.duration(nextStartTime).asMinutes()
+    ) {
+      setBriefImgIndex(briefImgIndex + 1);
+    }
+  };
 
   // we need to use "useMemo" here, so we don't create new video elment on any render
   const videoElement = React.useMemo(() => {
@@ -38,8 +59,6 @@ const Video = (props: any) => {
     element.src = src;
 
     element.setAttribute('playsinline', '');
-    element.setAttribute('autoplay', '');
-    element.setAttribute('loop', '');
 
     return element;
   }, [src]);
@@ -175,14 +194,20 @@ const Video = (props: any) => {
     <>
       <Stage width={size.width} height={size.height}>
         <Layer ref={container}>
+          <BriefingImg
+            width={size.width}
+            height={size.height}
+            data={briefingConfig[briefImgIndex]}
+          ></BriefingImg>
           <Image
+            draggable
             ref={imageRef}
             image={videoElement}
             x={0}
             y={0}
             stroke="red"
-            width={size.width}
-            height={size.height}
+            width={size.width / 5}
+            height={size.height / 5}
             onClick={toggleStop}
           />
           <Group
@@ -259,4 +284,4 @@ const Video = (props: any) => {
   );
 };
 
-export default Video;
+export default VideoWithPic;

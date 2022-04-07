@@ -31,6 +31,7 @@
   },
   "homepage": "https://github.com/gh286991/VideoPlayer#readme",
   "dependencies": {
+    "@rollup/plugin-json": "^4.1.0",
     "@types/react": "^17.0.13",
     "hls.js": "^1.1.5",
     "konva": "^8.3.4",
@@ -50,7 +51,8 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-postcss-modules": "^2.0.2",
-    "rollup-plugin-typescript2": "^0.30.0"
+    "rollup-plugin-typescript2": "^0.30.0",
+    "ts-node": "^10.7.0"
   },
   "peerDependencies": {
     "react": "^17.0.2",

@@ -1,0 +1,33 @@
+{
+  "title": {
+    "fontSize": 20,
+    "color": "black",
+    "x": 3,
+    "y": 5
+  },
+  "options": {
+    "blankFromTitle": 2,
+    "fontSize": 20,
+    "color": "yellow",
+    "selectColor": "blue",
+    "rightColor": "blue",
+    "wrongColor": "red",
+    "x": 3,
+    "y": 5
+  },
+  "button": {},
+  "closeCross": {
+    "x": 14,
+    "y": 3,
+    "width": 10,
+    "height": 10,
+    "strokeWidth": 2,
+    "color": "red"
+  },
+  "window": {
+    "ratio": 0.8,
+    "backgroundColor": "white",
+    "cornerRadius": 10
+  },
+  "draggable": true
+}

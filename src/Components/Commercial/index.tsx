@@ -4,7 +4,6 @@ import { Stage, Layer, Image, Rect, Line } from 'react-konva';
 import useImage from 'use-image';
 import * as R from 'ramda';
 import moment from 'moment';
-import Konva from 'konva';
 
 const ImageBlock = (props: any) => {
   const { url, x, y, width, height, onClick } = props;

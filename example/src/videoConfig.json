@@ -21,27 +21,81 @@
   ],
   "Q&A": [
     {
-      "question": "This is quetionA",
-      "option": [
-        {
-          "answer": "optionA",
-          "isAnswer": true
-        },
-        {
-          "answer": "optionB",
-          "isAnswer": false
-        },
-        {
-          "answer": "optionA",
-          "isAnswer": false
-        },
-        {
-          "answer": "optionA",
-          "isAnswer": false
-        }
-      ],
-      "start": "00:05",
-      "keep": 10
+      "title": {
+        "question": "This is question A"
+      },
+      "options": {
+        "content": [
+          {
+            "answer": "optionA",
+            "isAnswer": false
+          },
+          {
+            "answer": "optionB",
+            "isAnswer": false
+          },
+          {
+            "answer": "optionC",
+            "isAnswer": true
+          },
+          {
+            "answer": "optionD",
+            "isAnswer": false
+          }
+        ]
+      },
+      "start": "00:01",
+      "keep": 10,
+      "window": {}
+    },
+    {
+      "title": {
+        "question": "This is question B",
+        "fontSize": 40,
+        "color": "black",
+        "offsetX": 20,
+        "offsetY": 40
+      },
+      "options": {
+        "fontSize": 20,
+        "color": "yellow",
+        "selectColor": "blue",
+        "rightColor": "blue",
+        "wrongColor": "red",
+        "offsetX": 20,
+        "offsetY": 40,
+        "content": [
+          {
+            "answer": "optionA",
+            "isAnswer": true
+          },
+          {
+            "answer": "optionB",
+            "isAnswer": false
+          },
+          {
+            "answer": "optionC",
+            "isAnswer": false
+          },
+          {
+            "answer": "optionD",
+            "isAnswer": false
+          }
+        ]
+      },
+      "start": "00:20",
+      "keep": 20,
+      "window": {
+        "backgroundColor": "red"
+      },
+      "closeCross": {
+        "offsetX": 30,
+        "offsetY": 4,
+        "width": 20,
+        "height": 20,
+        "strokeWidth": 5,
+        "color": "green"
+      }
     }
   ]
 }

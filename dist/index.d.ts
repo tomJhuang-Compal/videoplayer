@@ -3,5 +3,6 @@ declare type VideoProps = {
     src: string;
     config: any;
 };
-declare const Counter: React.FC<VideoProps>;
-export default Counter;
+export declare const VideoPlayer: React.FC<VideoProps>;
+export declare const VideoPlayerWithPic: React.FC<VideoProps>;
+export {};

@@ -1,0 +1,59 @@
+{
+  "CM": [
+    {
+      "img": "https://i.imgur.com/Qkowlg5.jpg",
+      "linkUrk": "https://24h.pchome.com.tw/",
+      "start": "00:02",
+      "alive": "10",
+      "offsetX": 0,
+      "offsetY": 0,
+      "cardType": "card",
+      "skipAble": false,
+      "config": {
+        "template": "cardText",
+        "location": "RT",
+        "background": {
+          "color": "grey",
+          "width": 100,
+          "height": 70,
+          "transparency": 0.5
+        },
+        "img": {
+          "width": 100,
+          "height": 70,
+          "offsetX": 0,
+          "offsetY": 0,
+          "transparency": 1
+        },
+        "text": {
+          "content": "OOOOXX",
+          "width": 100,
+          "height": 70,
+          "offsetX": 0,
+          "offsetY": 0,
+          "color": "black"
+        },
+        "button": {
+          "text": "Go!",
+          "textColor": "White",
+          "backgroundColor": "blue",
+          "transparency": 1,
+          "offsetX": 0,
+          "offsetY": 0,
+          "width": 30,
+          "height": 10
+        },
+        "cross": {
+          "color": "red",
+          "transparency": 1,
+          "offsetX": 0,
+          "offsetY": 0,
+          "width": 40,
+          "height": 40
+        }
+      },
+      "limitSkipTime": 5,
+      "CMVideo": "https://vimeo.com/685303927"
+    }
+  ]
+}
